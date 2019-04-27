@@ -1,0 +1,38 @@
+h2 {
+    color: darkgray;
+    margin-bottom: 1rem!important;
+
+}
+
+h6 {
+    font-weight: bolder!important;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+section.bg-primary {
+    background-color: rgba(228, 228, 228, 0.883)!important;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display:none;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+#content {
+    padding-top: 6rem!important;
+    /* padding-bottom: 0!important; */
+}
+
+

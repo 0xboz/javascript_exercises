@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Exercises</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="prism.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav id="mainNav" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">JavaScript Exercises</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Exercises</a>
+                    <div class="dropdown-menu scrollable-menu" aria-labelledby="dropdownId">
+                        <a href="#basic" class="dropdown-item">Basic</a>
+                        <a href="#fundamental" class="dropdown-item">Fundamental</a>
+                        <a href="#functions" class="dropdown-item">Functions</a>
+                        <a href="#recursion" class="dropdown-item">Recursion</a>
+                        <a href="#onditionals-and-loops" class="dropdown-item">Conditionals & Loops</a>
+                        <a href="#array" class="dropdown-item">Array</a>
+                        <a href="#date" class="dropdown-item">Date</a>
+                        <a href="#string" class="dropdown-item">String</a>
+                        <a href="#math" class="dropdown-item">Math</a>
+                        <a href="#regex" class="dropdown-item">Regex</a>
+                        <a href="#dom" class="dropdown-item">DOM</a>
+                        <a href="#drawing" class="dropdown-item">Drawing</a>
+                        <a href="#searching-and-sorting" class="dropdown-item">Searching & Sorting</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+
+    </header>
+
+    <section id="content" class="bg-light mb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#basic">Basic</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#fundamental">Fundamental</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#functions">Functions</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#recursion">Recursion</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#conditionals-and-loops">Conditionals & Loops</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#array">Array</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#date">Date</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#string">String</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#math">Math</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#regex">Regex</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#dom">DOM</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#drawing">Drawing</a></h4>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <h4><a href="#searching-and-sorting1">Searching & Sorting</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="basic" class="bg-primary">
+        <div class="container">
+            <hr>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Basic</h2>
+                <div>
+                    <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        <a href="#basic-a1" data-toggle="collapse">Answer</a>
+                    </h6>
+                    <p><span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                            Tuesday.<br>Current time is : 10 PM : 30 : 38</samp></p>
+                    <div id="basic-a1" class="collapse">
+                        <p><samp id="q1">Today is : Tuesday.<br>Current time is : 10 PM : 30 : 38</samp></p>
+                        <pre data-src="answers/Q1.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q1.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q2: Write a JavaScript program (a button) to print the contents of the current window. <a href="#basic-a2"
+                            data-toggle="collapse">Answer</a>
+                    </h6>
+
+                    <div id="basic-a2" class="collapse">
+                        <p><a class="btn btn-primary" onclick="print_current_window()" role="button">primary</a>
+                            <button type="button" class="btn btn-secondary" onclick="print_current_window()">secondary</button>
+                            <button type="button" name="" id="" class="btn btn-success" btn-lg btn-block">success</button>
+                            <button type="button" class="btn btn-info" onclick="print_current_window()">info</button>
+                            <button type="button" class="btn btn-warning" onclick="print_current_window()">warning</button>
+                            <input name="" id="" class="btn btn-danger" type="button" value="danger"
+                                onclick="print_current_window()">
+                            <button type="button" class="btn btn-dark" onclick="print_current_window()">dark</button>
+                            <button type="button" class="btn btn-light" onclick="print_current_window()">light</button>
+                            <button type="button" class="btn btn-link" onclick="print_current_window()">link</button>
+                        </p>
+                        <pre id="" data-src="answers/Q2.html" class="pre-scrollable"></pre>
+                        <pre id="" data-src="answers/Q2.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q3: Write a JavaScript program to get the current date. <a href="#basic-a3"
+                            data-toggle="collapse">Answer</a>
+                    </h6>
+                    <p><span style="font-style:italic;">Sample Output:</span><br><samp>mm-dd-yyyy, mm/dd/yyyy or
+                            dd-mm-yyyy, dd/mm/yyyy</samp></p>
+                    <div id="basic-a3" class="collapse">
+                        <p><samp id="q3">mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</samp></p>
+                        <pre data-src="answers/Q3.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q3.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q4: Write a JavaScript program to find the area of a triangle where lengths of the three of
+                        its sides are 5, 6, 7. <a href="#basic-a4" data-toggle="collapse">Answer</a>
+                    </h6>
+                    <div id="basic-a4" class="collapse">
+                        <p><samp id="q4"></samp></p>
+                        <p><a href="https://en.wikipedia.org/wiki/Heron%27s_formula">Heron's formula</a></p>
+                        <pre data-src="answers/Q4.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q4.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q5: Write a JavaScript program to rotate the string 'JavaScript' in right direction by
+                        periodically removing one letter from the end of the string and attaching it to the front.
+                        <a href="#basic-a5" data-toggle="collapse">Answer</a>
+                    </h6>
+                    <p><span style="font-style:italic;">Sample Output:</span><br><samp id="q5">JavaScript</samp></p>
+
+                    <div id="basic-a5" class="collapse">
+                        <pre data-src="answers/Q5.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q5.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <hr>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="basic">Basic</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                            <a href="#basic-a1" data-toggle="collapse">Answer</a>
+                        </h6>
+                        <p><span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time is : 10 PM : 30 : 38</samp></p>
+                        <div id="basic-a1" class="collapse">
+                            <p><samp id="q1">Today is : Tuesday.<br>Current time is : 10 PM : 30 : 38</samp></p>
+                            <pre data-src="answers/Q1.html" class="pre-scrollable"></pre>
+                            <pre data-src="answers/Q1.js" class="pre-scrollable"></pre>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Q2: Write a JavaScript program (a button) to print the contents of the current window. <a
+                                href="#basic-a2" data-toggle="collapse">Answer</a>
+                        </h6>
+
+                        <div id="basic-a2" class="collapse">
+                            <p><a class="btn btn-primary" onclick="print_current_window()" role="button">primary</a>
+                                <button type="button" class="btn btn-secondary"
+                                    onclick="print_current_window()">secondary</button>
+                                <button type="button" name="" id="" class="btn btn-success" btn-lg
+                                    btn-block">success</button>
+                                <button type="button" class="btn btn-info"
+                                    onclick="print_current_window()">info</button>
+                                <button type="button" class="btn btn-warning"
+                                    onclick="print_current_window()">warning</button>
+                                <input name="" id="" class="btn btn-danger" type="button" value="danger"
+                                    onclick="print_current_window()">
+                                <button type="button" class="btn btn-dark"
+                                    onclick="print_current_window()">dark</button>
+                                <button type="button" class="btn btn-light"
+                                    onclick="print_current_window()">light</button>
+                                <button type="button" class="btn btn-link"
+                                    onclick="print_current_window()">link</button>
+                            </p>
+                            <pre id="" data-src="answers/Q2.html" class="pre-scrollable"></pre>
+                            <pre id="" data-src="answers/Q2.js" class="pre-scrollable"></pre>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Q3: Write a JavaScript program to get the current date. <a href="#basic-a3"
+                                data-toggle="collapse">Answer</a>
+                        </h6>
+                        <p><span style="font-style:italic;">Sample Output:</span><br><samp>mm-dd-yyyy, mm/dd/yyyy or
+                                dd-mm-yyyy, dd/mm/yyyy</samp></p>
+                        <div id="basic-a3" class="collapse">
+                            <p><samp id="q3">mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</samp></p>
+                            <pre data-src="answers/Q3.html" class="pre-scrollable"></pre>
+                            <pre data-src="answers/Q3.js" class="pre-scrollable"></pre>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Q4: Write a JavaScript program to find the area of a triangle where lengths of the three of
+                            its sides are 5, 6, 7. <a href="#basic-a4" data-toggle="collapse">Answer</a>
+                        </h6>
+                        <div id="basic-a4" class="collapse">
+                            <p><samp id="q4"></samp></p>
+                            <p><a href="https://en.wikipedia.org/wiki/Heron%27s_formula">Heron's formula</a></p>
+                            <pre data-src="answers/Q4.html" class="pre-scrollable"></pre>
+                            <pre data-src="answers/Q4.js" class="pre-scrollable"></pre>
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Q5: Write a JavaScript program to rotate the string 'JavaScript' in right direction by
+                            periodically removing one letter from the end of the string and attaching it to the front.
+                            <a href="#basic-a5" data-toggle="collapse">Answer</a>
+                        </h6>
+                        <p><span style="font-style:italic;">Sample Output:</span><br><samp id="q5">JavaScript</samp></p>
+
+                        <div id="basic-a5" class="collapse">
+                            <pre data-src="answers/Q5.html" class="pre-scrollable"></pre>
+                            <pre data-src="answers/Q5.js" class="pre-scrollable"></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="fundamental">Fundamental</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program (a button) to print the contents of the current window.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#fundamental-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="fundamental-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="functions">Functions</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#functions-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="functions-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="recursion">Recursion</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#recursion-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="recursion-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="conditionals-and-loops">Conditionals & Loops</a></h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#conditionals-and-loops-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="conditionals-and-loops-a1" data-src="answers/Q1.js"
+                            class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div id="array" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4>Array</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#array-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="array-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="date">Date</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#date-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="date-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="string">String</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#string-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="string-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="math">Math</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#math-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="math-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="regex">Regex</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#regex-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="regex-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="dom">DOM</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#dom-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="functions-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="drawing">Drawing</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#drawing-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="functions-a1" data-src="answers/Q1.js" class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h4 id="searching-and-sorting">Searching & Sorting</h4>
+                    <div>
+                        <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                        </h6>
+                        <p> <span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
+                                Tuesday.<br>Current time
+                                is : 10 PM : 30 : 38</samp></p>
+                        <h6><a href="#searching-and-sorting-a1" data-toggle="collapse">Answer</a></h6>
+                        <pre id="searching-and-sorting-a1" data-src="answers/Q1.js"
+                            class="pre-scrollable collapse"></pre>
+                    </div>
+                </div>
+                <a id="back-to-top" href="#" class="btn btn-dark btn-md back-to-top" role="button" title=""
+                    data-toggle="tooltip" data-placement="left"><span class="fa fa-arrow-up"></span></a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="prism.js"></script>
+    <script src="main.js"></script>
+    <!-- Answers -->
+    <script src="answers/Q1.js"></script>
+    <script src="answers/Q2.js"></script>
+    <script src="answers/Q3.js"></script>
+    <script src="answers/Q4.js"></script>
+    <script src="answers/Q5.js"></script>
+</body>
+
+</html>
