@@ -1,5 +1,4 @@
 // Q7 JavaScript
-
 const q7_isSunday = () => {
     const yearFrom = document.querySelector('#q7_year_from').value;
     const yearTo = document.querySelector('#q7_year_to').value;

@@ -1,5 +1,4 @@
 // Q6 JavaScript
-
 const q6_checkLeapYear = () => {
     const year = document.getElementById('leap_year').value;
     const warning = document.querySelector('#q6_warning');
