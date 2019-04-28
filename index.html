@@ -113,7 +113,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h2>Basic</h2>
                 <div>
-                    <h6>Q1: Write a JavaScript program to display the current day and time in the following format.
+                    <h6>Q1: Display the current day and time in the following format.
                         <a href="#basic-a1" data-toggle="collapse">Answer</a>
                     </h6>
                     <p><span style="font-style:italic;">Sample Output:</span><br><samp>Today is :
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div>
-                    <h6>Q2: Write a JavaScript program (a button) to print the contents of the current window. <a href="#basic-a2"
+                    <h6>Q2: Create a button to print the contents of the current window. <a href="#basic-a2"
                             data-toggle="collapse">Answer</a>
                     </h6>
 
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div>
-                    <h6>Q3: Write a JavaScript program to get the current date. <a href="#basic-a3"
+                    <h6>Q3: Get the current date. <a href="#basic-a3"
                             data-toggle="collapse">Answer</a>
                     </h6>
                     <p><span style="font-style:italic;">Sample Output:</span><br><samp>mm-dd-yyyy, mm/dd/yyyy or
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div>
-                    <h6>Q4: Write a JavaScript program to find the area of a triangle where lengths of the three of
+                    <h6>Q4: Calculate the area of a triangle where lengths of the three of
                         its sides are 5, 6, 7. <a href="#basic-a4" data-toggle="collapse">Answer</a>
                     </h6>
                     <div id="basic-a4" class="collapse">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div>
-                    <h6>Q5: Write a JavaScript program to rotate the string 'JavaScript' in right direction by
+                    <h6>Q5: Rotate the string 'JavaScript' in right direction by
                         periodically removing one letter from the end of the string and attaching it to the front.
                         <a href="#basic-a5" data-toggle="collapse">Answer</a>
                     </h6>
@@ -178,6 +178,37 @@
                     <div id="basic-a5" class="collapse">
                         <pre data-src="answers/Q5.html" class="pre-scrollable"></pre>
                         <pre data-src="answers/Q5.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q6: Determine whether a given year is a leap year in the Gregorian calendar.
+                        <a href="#basic-a6" data-toggle="collapse">Answer</a>
+                    </h6>
+                    <div id="basic-a6" class="collapse">
+                        <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <input class="form-control mb-3" type="text" id="leap_year" placeholder="Which year to check?"/>
+                            <p class="alert-danger" style="display:none;" id='q6_warning'>Please enter digits only.</p>
+                            <p class="alert-info" style="display:none;" id='q6_result'></p>
+                            <button class="form-control btn btn-info" onclick="q6_checkLeapYear()">Check</button>
+                        </div>
+                        <pre data-src="answers/Q6.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q6.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q7: Find the year in which January 1st is being a Sunday From 2014 to 2050.
+                        <a href="#basic-a7" data-toggle="collapse">Answer</a>
+                    </h6>
+                    <div id="basic-a7" class="collapse">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                            <input class="form-control mb-3" type="text" id="q7_year_from" placeholder="From" value="2014"/>
+                            <input class="form-control mb-3" type="text" id="q7_year_to" placeholder="To" value="2050"/>
+                            <p class="alert-danger" style="display:none;" id='q7_warning'>Please enter digits only.</p>
+                            <p class="alert-info" style="display:none;" id='q7_result'></p>
+                            <button class="form-control btn btn-info" onclick="q7_isSunday()">Check</button>
+                        </div>
+                        <pre data-src="answers/Q7.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q7.js" class="pre-scrollable"></pre>
                     </div>
                 </div>
             </div>
@@ -441,6 +472,8 @@
     <script src="answers/Q3.js"></script>
     <script src="answers/Q4.js"></script>
     <script src="answers/Q5.js"></script>
+    <script src="answers/Q6.js"></script>
+    <script src="answers/Q7.js"></script>
 </body>
 
 </html>
