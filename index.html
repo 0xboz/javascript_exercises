@@ -226,11 +226,44 @@
                         <pre data-src="answers/Q8.js" class="pre-scrollable"></pre>
                     </div>
                 </div>
+                <div>
+                    <h6>Q9: Calculate days left until next Christmas.
+                        <a href="#basic-a9" data-toggle="collapse">Answer</a>
+                    </h6>
+                    <div id="basic-a9" class="collapse">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-9 col-xs-12">
+                            <p class="alert-info" style="display:none;" id='q9_result'></p>
+                            <input class="btn btn-info btn-block mt-2" id="q9_calculate" type="button" value="Calculate">
+                        </div>
+                        <pre data-src="answers/Q9.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q9.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q10: Calculate multiplication and division of two numbers.
+                        <a href="#basic-a10" data-toggle="collapse">Answer</a>
+                    </h6>
+
+                    <div id="basic-a10" class="collapse">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-10 col-xs-12">
+                            <input class="form-control mb-3" placeholder="Number 1" type="number" name="" id="q10_num1">
+                            <input class="form-control mb-3" placeholder="Number 2" type="number" name="" id="q10_num2">
+                            <p class="alert-danger" style="display:none;" id='q10_warning'>Please enter numbers only.</p>
+                            <p class="alert-info" style="display:none;" id='q10_result'></p>
+                            <div class="btn-group btn-group-md btn-block">
+                                <button class="btn btn-primary" id="q10_multiply">Multiply</button>
+                                <button class="btn btn-primary" id="q10_divide" aria-disabled="">Divide</button>
+                            </div>
+                        </div>
+                        <pre data-src="answers/Q10.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q10.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <!-- <section>
         <div class="container">
             <hr>
             <div class="row">
@@ -458,15 +491,15 @@
                             class="pre-scrollable collapse"></pre>
                     </div>
                 </div>
-                <a id="back-to-top" href="#" class="btn btn-dark btn-md back-to-top" role="button" title=""
-                    data-toggle="tooltip" data-placement="left"><span class="fa fa-arrow-up"></span></a>
+
 
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-
+    <a id="back-to-top" href="#" class="btn btn-dark btn-md back-to-top" role="button" title="" data-toggle="tooltip"
+        data-placement="left"><span class="fa fa-arrow-up"></span></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"
@@ -490,6 +523,8 @@
     <script src="answers/Q6.js"></script>
     <script src="answers/Q7.js"></script>
     <script src="answers/Q8.js"></script>
+    <script src="answers/Q9.js"></script>
+    <script src="answers/Q10.js"></script>
 </body>
 
 </html>
