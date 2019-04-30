@@ -54,8 +54,12 @@
                     </div>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="navSearch" class="form-control mr-sm-2" type="text" placeholder="Search">
+            </form>
         </div>
     </nav>
+
 
     <header>
 
@@ -252,11 +256,31 @@
                             <p class="alert-info" style="display:none;" id='q10_result'></p>
                             <div class="btn-group btn-group-md btn-block">
                                 <button class="btn btn-primary" id="q10_multiply">Multiply</button>
-                                <button class="btn btn-primary" id="q10_divide" aria-disabled="">Divide</button>
+                                <button class="btn btn-primary" id="q10_divide">Divide</button>
                             </div>
                         </div>
                         <pre data-src="answers/Q10.html" class="pre-scrollable"></pre>
                         <pre data-src="answers/Q10.js" class="pre-scrollable"></pre>
+                    </div>
+                </div>
+                <div>
+                    <h6>Q11: Convert temperature unit between Celsius and Fahrenheit.
+                        <a href="#basic-a11" data-toggle="collapse">Answer</a>
+                    </h6>
+
+                    <div id="basic-a11" class="collapse">
+                        <div class="form-group col-lg-4 col-md-4 col-sm-11 col-xs-12">
+                            <input class="form-control mb-3" placeholder="Celsius &deg;C" type="number" name="" id="q11_c">
+                            <input class="form-control mb-3" placeholder="Fahrenheit &deg;F" type="number" name="" id="q11_f">
+                            <p class="alert-danger" style="display:none;" id='q11_warning'>Please enter numbers only.</p>
+                            <p class="alert-info" style="display:none;" id='q11_result'></p>
+                            <div class="btn-group btn-group-md btn-block">
+                                <button class="btn btn-primary disabled" id="q11_toC">Convert to &deg;C</button>
+                                <button class="btn btn-primary disabled" id="q11_toF">Convert to &deg;F</button>
+                            </div>
+                        </div>
+                        <pre data-src="answers/Q11.html" class="pre-scrollable"></pre>
+                        <pre data-src="answers/Q11.js" class="pre-scrollable"></pre>
                     </div>
                 </div>
             </div>
@@ -515,7 +539,7 @@
     <script src="prism.js"></script>
     <script src="main.js"></script>
     <!-- Answers -->
-    <script src="answers/Q1.js"></script>
+    <!-- <script src="answers/Q1.js"></script>
     <script src="answers/Q2.js"></script>
     <script src="answers/Q3.js"></script>
     <script src="answers/Q4.js"></script>
@@ -524,7 +548,8 @@
     <script src="answers/Q7.js"></script>
     <script src="answers/Q8.js"></script>
     <script src="answers/Q9.js"></script>
-    <script src="answers/Q10.js"></script>
+    <script src="answers/Q10.js"></script> -->
+    <!-- <script src="answers/Q11.js"></script> -->
 </body>
 
 </html>

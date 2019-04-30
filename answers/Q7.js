@@ -21,4 +21,4 @@ const q7_isSunday = () => {
         result.style.display = '';
         }
     }
-}
+};

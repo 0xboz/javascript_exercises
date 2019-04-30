@@ -17,4 +17,4 @@ const q8_guessNum = () => {
         result.innerHTML = 'Sorry! Maybe try one more time.';
         result.style.display = '';
     }
-}
+};

@@ -18,5 +18,4 @@ const daysLeftToXmas = () => {
     q9Result.innerHTML = `${daysLeft} days left until next Christmas.`;
     q9Result.style.display = '';
 }
-
 q9Button.addEventListener('click', daysLeftToXmas);

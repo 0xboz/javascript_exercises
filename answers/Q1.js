@@ -18,5 +18,5 @@ const getTime = () => {
 }
 
 const q1_element = document.getElementById('q1');
-q1_element.innerHTML = `Today is: ${getDay()}. <br>Current time is: ${getTime()}`
+q1_element.innerHTML = `Today is: ${getDay()}. <br>Current time is: ${getTime()}`;
 
