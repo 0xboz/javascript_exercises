@@ -1,11 +1,14 @@
 h2 {
-    color: darkgray;
+    color: rgb(90, 90, 90);
     margin-bottom: 1rem!important;
 
 }
 
 h6 {
-    font-weight: bolder!important;
+    font-weight: 400!important;
+    font-size: large!important;
+    background-color: rgba(195, 222, 183, 0.685);
+    padding: 5px 0 5px 5px;
 }
 
 section {
